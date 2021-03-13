@@ -1,0 +1,114 @@
+.manage-page {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.manage-arrow {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 19px;
+    color: #9495AA;
+    cursor: pointer;
+}
+
+.manage-page__left::before {
+    content:"";
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    position: relative;
+    top: 1px;
+    background: url("/static/img/lk/manage/left.svg")
+    no-repeat center;
+}
+
+.manage-page__right::after {
+    content:"";
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+    position: relative;
+    top: 1px;
+    background: url("/static/img/lk/manage/right.svg")
+    no-repeat center;
+}
+
+.manage-arrow:hover {
+    color: #84D04F;
+}
+
+.manage-arrow:hover::before {
+    background: url("/static/img/lk/manage/left_active.svg")
+    no-repeat center;
+}
+
+.manage-arrow:hover::after {
+    background: url("/static/img/lk/manage/right_active.svg")
+    no-repeat center;
+}
+
+.manage-page__content {
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+.manage-page__numb {
+    width: 42px;
+    height: 42px;
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #E8EEFB;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    transition: 0.3s;
+    color: #9495AA;
+    cursor: pointer;
+}
+
+.manage-page__numb_active {
+    color: #84D04F;
+    border: 1px solid #84D04F;
+}
+
+
+@media screen and (max-width: 768px) {
+    .manage-page {
+        max-width: 300px;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .manage-page__content {
+        margin: 0 15px;
+    }
+
+    .manage-arrow {
+        max-width: 10px;
+        position: relative;
+        overflow-x: hidden;
+        color: #fff;
+    }
+
+    .manage-page__left {
+        left: 14px;
+    }
+
+    .manage-page__right {
+        right: 14px;
+    }
+
+    .manage-arrow::before,
+    .manage-arrow::after {
+        margin: 0;
+        position: absolute;
+        left: 0;
+    }
+}

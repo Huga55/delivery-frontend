@@ -1,0 +1,33 @@
+{
+  "name": "express-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "npm run build && next export -o _static"
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "date-fns": "^2.16.1",
+    "next": "10.0.3",
+    "next-redux-wrapper": "^6.0.2",
+    "react": "17.0.1",
+    "react-datepicker": "^3.3.0",
+    "react-dom": "17.0.1",
+    "react-google-maps": "^9.4.5",
+    "react-hook-form": "^6.13.0",
+    "react-input-mask": "^2.0.4",
+    "react-redux": "^7.2.2",
+    "react-yandex-maps": "^4.6.0",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.12",
+    "@types/react": "^17.0.0",
+    "typescript": "^4.1.3"
+  }
+}

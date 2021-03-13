@@ -1,0 +1,72 @@
+.top {
+    width: 100%;
+    left: 0;
+    top: 95px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    position: absolute;
+    z-index: 2;
+}
+
+.top__bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 50%;
+    margin-right: -555px;
+    top: 0;
+    background: url("/static/img/organization/cube_m.svg")
+    no-repeat right 49px center,
+    var(--color-gray);
+    border-radius: 0 0 45px 0;
+}
+
+.top__container {
+    position: relative;
+}
+
+.breadcrumbs {
+    margin-bottom: 30px;
+}
+
+.breadcrumb {
+    margin-right: 5px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.breadcrumb_active {
+    color: #9495AA;
+}
+
+@media screen and (max-width: 1112px) {
+    .top__bg {
+        right: auto;
+        left: 0;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .top {
+        padding: 0;
+        height: 90px;
+        top: 60px;
+        display: flex;
+        align-items: center;
+    }
+
+    .top__container {
+        margin: 0;
+    }
+
+    .top__bg {
+        background-size: 83px auto;
+        background-position: right 15px center;
+    }
+
+    .breadcrumbs {
+        display: none;
+    }
+}

@@ -1,0 +1,162 @@
+.record__top {
+    background: #fff;
+}
+
+.record__describe {
+    padding: 0 40px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: #fff;
+}
+
+.record__date {
+    margin-bottom: 7px;
+}
+
+.record__name {
+    margin-bottom: 9px;
+}
+
+.record__type {
+    color: #9495AA;
+}
+
+.record__subname {
+    margin-bottom: 5px;
+    color: #9495AA;
+}
+
+.record__content {
+    width: 1190px;
+    padding: 40px;
+    background: transparent;
+    box-sizing: border-box;
+}
+
+.record__window {
+    max-height: 402px;
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow-y: scroll;
+    box-sizing: border-box;
+}
+
+.record__table {
+
+}
+
+.record__cell-head {
+    padding-bottom: 15px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #9495AA;
+    text-align: left;
+    border-bottom: 1px solid #EFF0F9;
+}
+
+.record__cell {
+    padding: 14px 0;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    border-bottom: 1px solid #EFF0F9;
+}
+
+.record__cell-name {
+    width: 505px;
+}
+
+.record__cell-type {
+    width: 154px;
+}
+
+.record__cell-number {
+    width: 150px;
+}
+
+.record__cell-date {
+    width: 155px;
+}
+
+.record__cell-download {
+    width: 76px;
+}
+
+.record__button {
+    width: 76px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 10px;
+    line-height: 14px;
+    text-transform: uppercase;
+}
+
+.record__button svg {
+    margin-bottom: 2px;
+}
+
+@media screen and (max-width: 1210px) {
+    .record__content {
+        width: 100%;
+    }
+
+    .record__table {
+        width: 1030px;
+        padding-right: 40px;
+    }
+}
+
+@media screen and (max-width: 883px) {
+    .record__describe {
+        flex-direction: column;
+    }
+
+    .record__describe__right {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .record__content {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .record__describe {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+
+    .record__date {
+        margin-bottom: 5px;
+    }
+
+    .record__name {
+        margin-bottom: 5px;
+    }
+
+    .record__describe__right {
+        display: none;
+    }
+
+    .record__window {
+        padding: 20px;
+    }
+
+    .record__content  {
+        padding-left: 0;
+        padding-right: 32px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}

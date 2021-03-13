@@ -1,0 +1,13 @@
+.man__name {
+    max-width: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+    .man__name {
+        max-width: none;
+        margin-bottom: 15px;
+    }
+}

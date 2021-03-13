@@ -1,0 +1,254 @@
+.footer {
+    padding-top: 61px;
+    padding-bottom: 20px;
+    position: relative;
+    color:#fff;
+}
+
+.footer__container {
+    position: relative;
+}
+
+.footer__bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50%; margin-left: -50%;
+    bottom: 0;
+}
+
+.footer__cube {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+.footer__cube_mobile {
+    display: none;
+}
+
+.footer__bg_mobile {
+    display: none;
+}
+
+.footer__text {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: normal;
+}
+
+.footer__logo-link {
+    width: 200px;
+    margin: 0 auto 39px auto;
+    display: block;
+    text-align: center;
+}
+
+.footer__top {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer__subtitle {
+    margin-bottom: 20px;
+}
+
+.footer__address {
+    max-width: 194px;
+    margin-bottom: 27px;
+}
+
+.footer__phone, .footer__phone a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.footer__phone::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    margin-right: 6px;
+    background: url("/static/img/main/footer/phone.svg")
+    no-repeat center;
+}
+
+.footer__links {
+    display: flex;
+    align-items: flex-start;
+}
+
+.footer__links-left {
+    margin-right: 66px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__links-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__link {
+    font-size: 16px;
+    line-height: 26px;
+    color: #fff;
+}
+
+.footer__work {
+    max-width: 266px;
+    letter-spacing: -0.01em;
+}
+
+.footer__bottom {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.footer__social {
+    width: 128px;
+    margin-right: 174px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__social-link {
+    display: flex;
+    align-items: center;
+}
+
+.footer__subscribe {
+    font-size: 12px;
+    line-height: 26px;
+    color: #94ACED;
+}
+
+.footer__pay {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.footer__banks {
+    margin-left: 15px;
+}
+
+
+
+
+@media screen and (max-width: 1040px) {
+    .footer__bg_desktop {
+        display: none;
+    }
+
+    .footer__bg_mobile {
+        display: block;
+    }
+
+    .footer__cube_desktop {
+        display: none;
+    }
+
+    .footer__cube_mobile {
+        width: 100%;
+        height: 50%;
+        display: block;
+        object-fit: cover;
+    }
+
+    .footer__logo-link {
+        margin-bottom: 30px;
+    }
+
+    .footer__top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__left {
+        order: 4;
+    }
+
+    .footer__middle {
+        margin-bottom: 25px;
+    }
+
+    .footer__right {
+        margin-bottom: 25px;
+    }
+
+    .footer__subtitle {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .footer__phone {
+        justify-content: center;
+    }
+
+    .footer__links {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer__text {
+        text-align: center;
+    }
+
+    .footer__links-left,
+    .footer__links-right {
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__address {
+        margin-bottom: 15px;
+    }
+
+    .footer__work {
+        max-width: 290px;
+    }
+
+    .footer__bottom {
+        flex-direction: column;
+    }
+
+    .footer__social {
+        margin-bottom: 20px;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .footer__pay {
+        flex-direction: column;
+    }
+
+    .footer__banks {
+        margin-top: 14px;
+    }
+
+    .footer__subscribe {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer__logo {
+        width: 134px;
+    }
+
+    .footer__text {
+        font-size: 14px;
+        line-height: 26px;
+    }
+}

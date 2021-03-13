@@ -1,0 +1,112 @@
+.time {
+    margin-bottom: 30px;
+}
+
+.time__row {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.time__block-left, .time__block-right {
+    max-width: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.time__label {
+
+}
+
+.time__label::before {
+    background: url("/static/img/other/calendar.svg")
+    no-repeat center;
+    right: 15px;
+    left: auto;
+    cursor: pointer;
+}
+
+.time__input {
+    width: 100%;
+    padding-left: 15px;
+}
+
+.time__window {
+    display: none;
+    padding: 40px;
+    background: var(--color-gray-dark);
+    border-radius: 0 0 40px 0;
+}
+
+.time__window-title {
+    margin-bottom: 20px;
+}
+
+.time__buttons {
+    width: 444px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.time__button {
+    width: 212px;
+    height: 40px;
+}
+
+.time__button_blue {
+    background: transparent;
+}
+
+.time__input_time {
+    width: 130px;
+    margin-right: 15px;
+    padding-left: 70px;
+    margin-top: 30px;
+}
+
+.time__block {
+    display: flex;
+    font-size: 16px;
+}
+
+.time__prompt {
+    height: 28px;
+    font-size: 20px;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .time__row {
+        margin-bottom: 20px;
+        flex-direction: column;
+    }
+
+    .time__block-left,
+    .time__block-right {
+        max-width: none;
+    }
+
+    .time__block-left {
+        margin-bottom: 15px;
+    }
+
+    .time__window {
+        padding: 20px;
+    }
+
+    .time__window-title {
+        margin-bottom: 15px;
+    }
+
+    .time__buttons {
+        max-width: 444px;
+        width: 100%;
+    }
+
+    .time__button {
+        width: 48%;
+    }
+}

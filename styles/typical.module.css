@@ -1,0 +1,494 @@
+.page {
+    padding-bottom: 100px;
+    background: #fff;
+}
+
+.page__img {
+    width: 100%;
+    margin-bottom: 60px;
+    display: block;
+}
+
+.page__top {
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.page__top-left {
+    max-width: 540px;
+}
+
+.page__top-text {
+    margin-bottom: 25px;
+}
+
+.page__top-right {
+    max-width: 540px;
+    padding: 40px;
+    position: relative;
+    border: 5px solid #F3F8FC;
+    box-sizing: border-box;
+    border-radius: 0 0 40px 0;
+}
+
+.page__top-quote {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    background: url("/static/img/page/quote.svg")
+    no-repeat center,
+    var(--color-green);
+    border-radius: 0 0 20px 0;
+}
+
+.page__top-line {
+    width: 5px;
+    height: calc(100% + 10px);
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    background: var(--color-green);
+}
+
+.page__title {
+    margin-bottom: 60px;
+}
+
+.page__contract {
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.page__contact-left {
+    max-width: 255px;
+    padding: 20px 30px 20px 0;
+    background: #F3F8FC;
+    border-radius: 0 0 40px 0;
+}
+
+.page__contact-top {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.page__contract-icon {
+    width: 95px;
+    height: 40px;
+    margin-right: 10px;
+    background: url("/static/img/page/pdf.svg")
+    no-repeat center right 14px,
+    var(--color-green);
+    border-radius: 0 0 20px 0;
+}
+
+.page__contract-size {
+    font-size: 14px;
+    line-height: 19px;
+    color: #9495AA;
+}
+
+.page__contract-name {
+    max-width: 195px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.page__contact-link {
+    margin-left: 30px;
+    text-transform: uppercase;
+}
+
+.page__contact-right {
+    max-width: 825px;
+}
+
+.page__contact-title {
+    margin-bottom: 20px;
+}
+
+.page__tariff-title {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.page__table {
+    width: 100%;
+    padding: 40px;
+    display: block;
+    margin-bottom: 25px;
+    background: #FFFFFF;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+.page__table tbody {
+    width: 100%;
+    display: block;
+}
+
+.page__row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #EFF0F9;
+}
+
+.page__cell-head {
+    width: 16%;
+    padding-bottom: 15px;
+    text-align: left;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #9495AA
+}
+
+.page__cell {
+    width: 16%;
+    padding: 25px 0;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.page__subscribe {
+    margin-bottom: 80px;
+    font-size: 14px;
+    line-height: 19px;
+    color: #9495AA;
+}
+
+.page__service {
+    margin-bottom: 146px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+
+.possibility {
+    max-width: 540px;
+}
+
+.possibility__title {
+    margin-bottom: 20px;
+}
+
+.possibility__list {
+    margin-bottom: -10px;
+}
+
+.possibility__elem {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.possibility__icon {
+    min-width: 35px;
+    height: 35px;
+    margin-right: 15px;
+    background: url("/static/img/page/ok.svg")
+    no-repeat center,
+    #FFFFFF;
+    border: 5px solid #E8EEFF;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+.possibility__text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.services__title {
+    margin-bottom: 24px;
+}
+
+.services__list {
+    margin-bottom: -21px;
+}
+
+.services__elem {
+    margin-bottom: 21px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.services__numb {
+    margin-right: 15px;
+    font-family: var(--font-play);
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    color: #2153DA;
+}
+
+.page__bottom {
+    display: flex;
+    align-items: flex-start;
+}
+
+.page-nav {
+    width: 350px;
+    height: 410px;
+    margin-right: 30px;
+    position: relative;
+}
+
+.page-nav__window {
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    padding: 40px 35px;
+    position: relative;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 0 0 40px 0;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.page-nav__title {
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    font-family: var(--font-play);
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #EFF0F9;;
+}
+
+.page-nav__list {
+    width: 250px;
+}
+
+.page-nav__elem {
+    margin-bottom: 18px;
+}
+
+.page-nav__bg {
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: url("/static/img/page/logo.svg")
+    no-repeat right 10px bottom 10px,
+    linear-gradient(270.09deg, #2153DA 0.08%, #072C8D 99.92%);
+    border-radius: 0 0 0 40px;
+}
+
+.page-add {
+    max-width: 730px;
+}
+
+.page-add__title {
+    margin-bottom: 40px;
+}
+
+.page-add__select {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #D2D2DC;
+}
+
+.page-add__option {
+    padding: 0 6px 20px 6px;
+    margin-right: 26px;;
+    color: var(--color-black);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.page-add__option_active {
+    color: var(--color-green);
+    border-bottom: 1px solid var(--color-green);
+}
+
+.page-add__block {
+    max-height: 0;
+    transition: 0.5s;
+    transform: scale(0);
+    overflow: hidden;
+}
+
+.page-add__block_active {
+    margin-bottom: -23px;
+    max-height: none;
+    visibility: visible;
+    transform: scale(1);
+}
+
+.page-add__text {
+    margin-bottom: 23px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1155px) {
+    .page__contract {
+        flex-direction: column;
+    }
+
+    .page__contact-left {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .page__top {
+        flex-direction: column;
+    }
+
+    .page__top-left {
+        margin-bottom: 30px;
+    }
+}
+
+
+@media screen and (max-width: 1065px) {
+    .page__service {
+        flex-direction: column;
+    }
+
+    .possibility {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .page__bottom {
+        flex-direction: column;
+    }
+
+    .page-nav {
+        margin-bottom: 40px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .page {
+        padding-bottom: 50px;
+    }
+
+    .page__img {
+        min-height: 250px;
+        margin-bottom: 30px;
+        object-fit: cover;
+        border-radius: 0 0 60px 0;
+    }
+
+    .page__top {
+        margin-bottom: 40px;
+    }
+
+    .page__top-right {
+        padding-right: 35px;
+    }
+
+    .page__title {
+        margin-bottom: 25px;
+    }
+
+    .page__contract {
+        margin-bottom: 40px;
+    }
+
+    .page__contact-title {
+        margin-bottom: 15px;
+    }
+
+    .page__tariff-title {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .page__table {
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+
+    .page__subscribe {
+        margin-bottom: 40px;
+    }
+
+    .page__service {
+        margin-bottom: 40px;
+    }
+
+    .services__title {
+        margin-bottom: 20px;
+    }
+
+    .page-nav {
+        width: 290px;
+        height: 370px;
+    }
+
+    .page-nav__window {
+        padding: 20px;
+    }
+
+    .page-add {
+        width: 100%;
+    }
+
+    .page-add__title {
+        margin-bottom: 20px;
+    }
+
+    .page-add__wrapper {
+        width: 100%;
+        overflow-x: scroll;
+    }
+
+    .page-add__option {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px
+    }
+}
+
+
+
+
+@media screen and (max-width: 544px) {
+    .page-add__select {
+        width: 515px;
+    }
+}
+
+
+
+
+
+
+
+

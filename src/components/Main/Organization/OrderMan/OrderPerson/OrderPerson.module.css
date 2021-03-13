@@ -1,0 +1,17 @@
+
+
+.man__add {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+    .man__dispatch {
+        margin-bottom: 15px;
+    }
+
+    .man__add {
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,26 @@
+.man__phone {
+    max-width: 350px;
+    width: 100%;
+}
+
+.man__phones {
+    max-width: 255px;
+    width: 100%;
+}
+
+.man__row-phone {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+@media screen and (max-width: 768px) {
+    .man__phone {
+        max-width: none;
+    }
+
+    .man__phones {
+        max-width: none;
+        margin-right: 15px;
+    }
+}

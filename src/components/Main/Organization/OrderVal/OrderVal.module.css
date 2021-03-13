@@ -1,0 +1,45 @@
+.val {
+    margin-bottom: 30px;
+}
+
+.val__prompt {
+    margin-left: 15px;
+    font-size: 14px;
+    line-height: 19px;
+    color: #9495AA;
+}
+
+.val__input {
+    width: 350px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+}
+
+.val__link {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+    .val__label {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .val__prompt {
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+
+    .val__input {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .val__br {
+        display: none;
+    }
+}

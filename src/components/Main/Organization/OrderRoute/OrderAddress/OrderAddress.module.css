@@ -1,0 +1,35 @@
+.route__input {
+    width: 100%;
+}
+
+.route__dispatch {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.route__prompt {
+    width: 100%;
+    height: 30px;
+    padding-left: 15px;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    cursor:pointer;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    transition: 0.3s;
+    display: none;
+}
+
+.route__prompt:hover {
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 768px) {
+    .route__dispatch {
+        margin-bottom: 15px;
+    }
+}

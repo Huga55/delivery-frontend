@@ -1,0 +1,19 @@
+.payment {
+    margin-bottom: 60px;
+}
+
+.payment__radios {
+    width: 445px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .payment__radios {
+        max-width: 445px;
+        width: 100%;
+    }
+
+    .payment {
+        margin-bottom: 40px;
+    }
+}
