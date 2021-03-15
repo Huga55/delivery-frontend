@@ -10,7 +10,7 @@ if (typeof window !== "undefined") {
 
 export const instance = axios.create({
     baseURL: 'http://express/api/',
-    //baseURL: 'https://expressapi.agaev.digital/api/',
+    //baseURL: 'https://deliveryapi.wimdev.com/api/',
     headers: {
         Authorization: token,
     }

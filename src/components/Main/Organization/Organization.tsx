@@ -72,35 +72,32 @@ const Organization: React.FC<PropsType> = (props) => {
             return;
         }
 
-        const timeFromDispatch = data.time_from_dispatch;
-        const timeToDispatch = data.time_to_dispatch;
-        const timeFromDelivery = data.time_from_delivery;
-        const timeToDelivery = data.time_to_delivery;
+        // const timeFromDispatch = data.time_from_dispatch;
+        // const timeToDispatch = data.time_to_dispatch;
+        // const timeFromDelivery = data.time_from_delivery;
+        // const timeToDelivery = data.time_to_delivery;
 
-        if( new Date(dateDispatch) === new Date(dateDelivery) ) {
-            if( (timeFromDelivery.split(":")[0] - timeFromDispatch.split(":")[0]) < 2 ) {
-                methods.setError("time_from_dispatch", {type: "manual", message: "Минимаьная разница 2 часа"});
-                methods.setError("time_from_delivery", {type: "manual", message: "Минимаьная разница 2 часа"});
-                return;
-            }
-        }
+        // if( new Date(dateDispatch) === new Date(dateDelivery) ) {
+        //     if( (timeFromDelivery.split(":")[0] - timeFromDispatch.split(":")[0]) < 2 ) {
+        //         methods.setError("time_from_dispatch", {type: "manual", message: "Минимаьная разница 2 часа"});
+        //         methods.setError("time_from_delivery", {type: "manual", message: "Минимаьная разница 2 часа"});
+        //         return;
+        //     }
+        // }
 
-        if(timeFromDispatch.split(":")[0] < timeToDispatch.split(":")[0]) {
-            methods.setError("time_from_dispatch", {type: "manual", message: "Ошибка"});
-            methods.setError("time_to_dispatch", {type: "manual", message: "Ошибка"});
-            return;
-        }
-        if(timeFromDelivery.split(":")[0] < timeToDelivery.split(":")[0]) {
-            methods.setError("time_from_delivery", {type: "manual", message: "Ошибка"});
-            methods.setError("time_to_delivery", {type: "manual", message: "Ошибка"});
-            return;
-        }
+        // if(timeFromDispatch.split(":")[0] < timeToDispatch.split(":")[0]) {
+        //     methods.setError("time_from_dispatch", {type: "manual", message: "Ошибка"});
+        //     methods.setError("time_to_dispatch", {type: "manual", message: "Ошибка"});
+        //     return;
+        // }
+        // if(timeFromDelivery.split(":")[0] < timeToDelivery.split(":")[0]) {
+        //     methods.setError("time_from_delivery", {type: "manual", message: "Ошибка"});
+        //     methods.setError("time_to_delivery", {type: "manual", message: "Ошибка"});
+        //     return;
+        // }
 
         const dateDispatchArr = dateDispatch.split("-");
         const fullDateDispatch = new Date(dateDispatchArr[0], dateDispatchArr[1], dateDispatchArr[2]);
-        debugger
-
-        return ;
 
         dispatch(getCorrectAddress(data["address-delivery"], "address-delivery"));
 
@@ -124,12 +121,12 @@ const Organization: React.FC<PropsType> = (props) => {
             type_length: data["type-length"],
             type_width: data["type-width"],
             name_cargo: data["name_cargo"],
-            time: {
-              dispatch_from: data.time_from_dispatch,
-              dispatch_to: data.time_to_dispatch,
-              delivery_from: data.time_from_delivery,
-              delivery_to: data.time_to_delivery,
-            },
+            // time: {
+            //   dispatch_from: data.time_from_dispatch,
+            //   dispatch_to: data.time_to_dispatch,
+            //   delivery_from: data.time_from_delivery,
+            //   delivery_to: data.time_to_delivery,
+            // },
         }
         await dispatch(sendDataDeliveryToServer(dataSend));
         setModalIsActive(true);

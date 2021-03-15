@@ -61,32 +61,32 @@ const OrderTime: React.FC = () => {
                             />
                         </Label>
                         <div className={c.time__block}>
-                            <Label>
-                            <Controller
-                                as={MaskedInput}
-                                className={`${c.time__input_time} input ${errors && errors["time_from_dispatch"]? "input_error" : ""}`}
-                                control={control}
-                                mask="99:99"
-                                placeholder="__:__"
-                                name="time_from_dispatch"
-                                rules={getValidateProps({standart: ["required"], custom: ["time"]})}
-                            />
-                                <span className={c.time__prompt}>От</span>
-                                {errors && errors["time_from_dispatch"]? <span className="label__error label__error-textarea">{errors["time_from_dispatch"].message}</span> : ""}
-                            </Label>
-                            <Label>
-                            <Controller
-                                as={MaskedInput}
-                                className={`${c.time__input_time} input ${errors && errors["time_to_dispatch"]? "input_error" : ""}`}
-                                control={control}
-                                mask="99:99"
-                                placeholder="__:__"
-                                name="time_to_dispatch"
-                                rules={getValidateProps({standart: ["required"], custom: ["time"]})}
-                            />
-                                <span className={c.time__prompt}>До</span>
-                                {errors && errors["time_to_dispatch"]? <span className="label__error label__error-textarea">{errors["time_to_dispatch"].message}</span> : ""}
-                            </Label>
+                            {/*<Label>*/}
+                            {/*<Controller*/}
+                            {/*    as={MaskedInput}*/}
+                            {/*    className={`${c.time__input_time} input ${errors && errors["time_from_dispatch"]? "input_error" : ""}`}*/}
+                            {/*    control={control}*/}
+                            {/*    mask="99:99"*/}
+                            {/*    placeholder="__:__"*/}
+                            {/*    name="time_from_dispatch"*/}
+                            {/*    rules={getValidateProps({standart: ["required"], custom: ["time"]})}*/}
+                            {/*/>*/}
+                            {/*    <span className={c.time__prompt}>От</span>*/}
+                            {/*    {errors && errors["time_from_dispatch"]? <span className="label__error label__error-textarea">{errors["time_from_dispatch"].message}</span> : ""}*/}
+                            {/*</Label>*/}
+                            {/*<Label>*/}
+                            {/*<Controller*/}
+                            {/*    as={MaskedInput}*/}
+                            {/*    className={`${c.time__input_time} input ${errors && errors["time_to_dispatch"]? "input_error" : ""}`}*/}
+                            {/*    control={control}*/}
+                            {/*    mask="99:99"*/}
+                            {/*    placeholder="__:__"*/}
+                            {/*    name="time_to_dispatch"*/}
+                            {/*    rules={getValidateProps({standart: ["required"], custom: ["time"]})}*/}
+                            {/*/>*/}
+                            {/*    <span className={c.time__prompt}>До</span>*/}
+                            {/*    {errors && errors["time_to_dispatch"]? <span className="label__error label__error-textarea">{errors["time_to_dispatch"].message}</span> : ""}*/}
+                            {/*</Label>*/}
                         </div>
                     </div>
                     <div className={c["time__block-right"]}>
@@ -103,34 +103,34 @@ const OrderTime: React.FC = () => {
                                 className="datepicker"
                             />
                         </Label>
-                        <div className={c.time__block}>
-                            <Label>
-                        <Controller
-                            as={MaskedInput}
-                            className={`${c.time__input_time} input ${errors && errors["time_from_delivery"]? "input_error" : ""}`}
-                            control={control}
-                            mask="99:99"
-                            name="time_from_delivery"
-                            placeholder="__:__"
-                            rules={getValidateProps({standart: ["required"], custom: ["time"]})}
-                        />
-                            <span className={c.time__prompt}>От</span>
-                                {errors && errors["time_from_delivery"]? <span className="label__error label__error-textarea">{errors["time_from_delivery"].message}</span> : ""}
-                            </Label>
-                            <Label>
-                            <Controller
-                                as={MaskedInput}
-                                className={`${c.time__input_time} input ${errors && errors["time_to_delivery"]? "input_error" : ""}`}
-                                control={control}
-                                mask="99:99"
-                                name="time_to_delivery"
-                                placeholder="__:__"
-                                rules={getValidateProps({standart: ["required"], custom: ["time"]})}
-                            />
-                                <span className={c.time__prompt}>До</span>
-                                {errors && errors["time_to_delivery"]? <span className="label__error label__error-textarea">{errors["time_to_delivery"].message}</span> : ""}
-                            </Label>
-                        </div>
+                        {/*<div className={c.time__block}>*/}
+                        {/*    <Label>*/}
+                        {/*<Controller*/}
+                        {/*    as={MaskedInput}*/}
+                        {/*    className={`${c.time__input_time} input ${errors && errors["time_from_delivery"]? "input_error" : ""}`}*/}
+                        {/*    control={control}*/}
+                        {/*    mask="99:99"*/}
+                        {/*    name="time_from_delivery"*/}
+                        {/*    placeholder="__:__"*/}
+                        {/*    rules={getValidateProps({standart: ["required"], custom: ["time"]})}*/}
+                        {/*/>*/}
+                        {/*    <span className={c.time__prompt}>От</span>*/}
+                        {/*        {errors && errors["time_from_delivery"]? <span className="label__error label__error-textarea">{errors["time_from_delivery"].message}</span> : ""}*/}
+                        {/*    </Label>*/}
+                            {/*<Label>*/}
+                            {/*<Controller*/}
+                            {/*    as={MaskedInput}*/}
+                            {/*    className={`${c.time__input_time} input ${errors && errors["time_to_delivery"]? "input_error" : ""}`}*/}
+                            {/*    control={control}*/}
+                            {/*    mask="99:99"*/}
+                            {/*    name="time_to_delivery"*/}
+                            {/*    placeholder="__:__"*/}
+                            {/*    rules={getValidateProps({standart: ["required"], custom: ["time"]})}*/}
+                            {/*/>*/}
+                            {/*    <span className={c.time__prompt}>До</span>*/}
+                            {/*    {errors && errors["time_to_delivery"]? <span className="label__error label__error-textarea">{errors["time_to_delivery"].message}</span> : ""}*/}
+                            {/*</Label>*/}
+                        {/*</div>*/}
                     </div>
                 </div>
                 <div className={c.time__window}>
